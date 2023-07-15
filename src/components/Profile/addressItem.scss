@@ -1,0 +1,33 @@
+.saved-address-item{
+    width: 90%;
+    border: 2px solid #DADADA;
+    border-radius: 10px;
+    margin: 1.5rem;
+    list-style: none;
+    .saved-address-details{
+        padding: 1rem;
+        font-size: 14px;
+        font-weight: 400;
+        .name ,.address-number{
+            font-weight: bold;
+        }
+        .butns{
+            display: flex;
+            justify-content: space-between;
+            .btns{
+                width: 48%;
+                height: 35px;
+                border-radius: 8px;
+                border: 1px solid #999999;
+                background-color: #ffffff;
+                color: #999999;
+                outline: none;
+                cursor: pointer;
+            }
+            .btns:hover{
+                color: #0293A8;
+                border-color: #0293A8;
+            }
+        }
+    }
+}

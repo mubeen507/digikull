@@ -1,0 +1,58 @@
+.button-container{
+    margin-top: 12px;
+    margin-right: 12px;
+    width: 45%;
+
+    .link{
+        text-decoration: none;
+        .btn{
+        height: 50px;
+        width: 100%;
+        border-radius: 15px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        background: #FFFFFF;
+        border: 1px solid rgba(2, 147, 168, 0.33);
+        border-radius: 15px;
+        cursor: pointer;
+        .button-icon{
+            height: 80%;
+            background-size: cover;
+            margin-right: 6px;
+            border-radius: 4px;
+            margin-left: 6px;
+            background-color: transparent;
+        }
+        }
+    }
+    
+}
+.inactive{
+    outline: none;
+    opacity: 0.5;
+}
+
+.button-container:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .button-container{
+        width: 100%;
+        .link{
+            text-decoration: none;
+           display: flex;
+           width: 90%;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .button-container{
+        width: 90%;
+    }
+}

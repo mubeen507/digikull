@@ -1,0 +1,104 @@
+.similar-product{
+    height: 350px;
+    flex-shrink: 0;
+    width: 250px;
+        padding: 1%;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: 60% 40%;
+        align-items: center;
+        justify-content: space-around;
+        margin: 12px;
+        border: 1px solid rgba(2, 147, 168, 0.33);
+        border-radius: 8px;
+        background-color: white;
+        position: relative;
+        cursor: pointer;
+        .link{
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+        }
+        .similar-produc-img{
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+            
+        }
+        .discounttag{
+            right: 0px;
+            padding: 2px;
+            width: 100px;
+            text-align: center;
+            top: 20px;
+            position: absolute;
+            border: 2px solid red;
+            background-color: red;
+            color: white;
+            
+          }
+        .similar-product-details{
+            width: 100%;
+            padding-top: 5px;
+            color: rgb(44, 44, 44);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            .similar-product-h{
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1;
+            }
+            .product-caegory{
+                font-size: 12px;
+            }
+            .heading_wishlist_icon{
+                display: flex;
+                justify-content: space-between;
+            }
+            .similar-product-price{
+                display: flex;
+                align-items: center;
+                
+            .similar-product-normal-price{
+                font-size: 16px;
+                text-decoration: line-through;
+                color: rgb(155, 154, 154);
+                margin-right: 12px;
+            }
+            .similar-product-discount-price{
+                color:black;
+                font-size: 16px;
+                line-height: 16px;
+                margin: 0px;
+                padding: 0;
+        
+            }
+        }
+    }
+}
+
+@media screen and (width<=1000px) {
+    .similar-product{
+        
+        .discounttag{
+            width: 60px;
+            height: 30px;
+            font-size: 13px;
+          }
+    }
+}
+// @media screen and (width<=840px) {
+//     .similar-product{
+//         width:90%;
+//     }
+// }
+
+@media screen and (width<=840px) {
+    .similar-product{
+        height: 240px;
+        width: 150px;
+    }
+}
+

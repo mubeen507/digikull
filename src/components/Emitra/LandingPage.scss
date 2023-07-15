@@ -1,0 +1,120 @@
+.logos{
+    width: 400px;
+}
+.digistall-logo{
+    width: 50%;
+}
+.emitra-logo{
+    margin-left: 20px;
+    width: 12%;
+}
+.sheader-up{
+    background-image: url("../../images/whiteBg-01.jpg");
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 50px 100px 0 100px;
+    overflow-x: hidden;
+}
+
+.equesbutton{
+    // width: 300px;
+    border:0;
+    background: #0293A8;
+    border-radius: 5px;
+    font-family: 'Hind';
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 11px 50px;
+    font-weight: 300;
+}
+.four-btn{
+    margin: 0px 10px;
+    width: 300px;
+}
+.equesbutton:hover{
+    transition: 0.25s;
+    color: #0293A8;
+    background-color: white;
+    border:1px solid #0293A8;
+}
+.equesbold{
+    font-weight: 500;
+    font-size: 18px;
+}
+.desktopMobile-img-emitra{
+    width: 80%;
+}
+.sfooter-logo-digistall{
+    width: 30%;
+}
+.sfooter-logo-emitra{
+    width: 10%;
+}
+@media screen and (max-width:1050px) {
+    .logos{
+        width: 300px;
+    }
+    .emitra-guide{
+        padding: 10px 30px;
+    }
+    .emitra-links{
+        width: 400px !important;
+    }
+    .sheader-up{
+        padding: 50px 50px 0 50px;
+    }
+}
+@media screen and (max-width:800px) {
+    .logos{
+        width: 270px;
+    }
+    .emitra-guide{
+        padding: 10px 30px;
+    }
+    .emitra-links{
+        width: 295px !important;
+    }
+}
+@media screen and (max-width:990px) {
+    .four-btn{
+        font-size: 14px;
+        padding: 10px 40px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .sheader-up{
+        flex-wrap: wrap;
+    }
+    .four-btn{
+        width: 200px;
+        margin: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .sheader-up{
+        padding: 30px 30px 0 30px;
+    }
+    .four-btn{
+        font-size: 12px;
+        width: 150px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .four-btn{
+        padding: 10px;
+        font-size: 10px;
+        width: 100px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:350px) {
+    .logos{
+        width: 228px;
+    }
+    .emitra-logo{
+        margin-left: 4px;
+    }
+}

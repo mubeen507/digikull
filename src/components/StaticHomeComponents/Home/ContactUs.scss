@@ -1,0 +1,135 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    // margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #def5f7;
+    border: 1px solid #e1f0f1;
+    // border-radius: 10px;
+    // margin-top: 4rem;
+    min-height: 100vh;
+    .contactsection {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 50%;
+        
+
+        .head {
+            color: #0293A8;
+            margin-bottom: 25px;
+            font-family: "Hind", sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 20px;
+            color: #0293A8;
+        }
+
+        .name {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .input {
+                display: flex;
+                flex-direction: column;
+                width: 48%;
+
+                .half {
+
+                    height: 45px;
+                    border-radius: 5px;
+                    border: none;
+                    // border: 2px solid #DADADA;
+                    margin-bottom: 10px;
+                    outline: none;
+                    padding: 5px;
+                    // font-weight: bold;
+                }
+            }
+
+
+        }
+
+        .full {
+            width: 100%;
+            height: 45px;
+            border-radius: 5px;
+            border: none;
+            // border: 2px solid #DADADA;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 5px;
+            // font-weight: 700;
+        }
+
+        .textarea {
+            height: 20vh;
+            border-radius: 5px;
+            // border: 2px solid #DADADA;
+            border: none;
+            margin-bottom: 10px;
+            outline: none;
+            padding: 5px;
+            // font-weight: 700;
+        }
+
+    }
+
+    .confirmbtn {
+        font-family: 'Hind';
+        font-size: 16px;
+        text-align: center;
+        margin-top: 1rem;
+        // font-weight: 600;
+        letter-spacing: 0.03rem;
+        color: #ffff;
+        outline: none;
+        // cursor: pointer;
+        background: #0293A8;
+        border: none;
+        border-radius: 5px;
+        padding: 11px 50px;
+    }
+    .confirmbtn:hover{
+        transition: 0.25s;
+  color: #0293A8;
+  background-color: white;
+  border:1px solid #0293A8;
+    }
+}
+
+@media screen and (max-width: 940px){
+        .contacts .contactsection {
+        width: 75%;
+    }
+    
+}
+
+
+
+@media screen and (width<=590px) {
+    .contacts {
+        // width: 80%;
+        margin-top: 2rem;
+        .contactsection {
+            .head {
+                font-size: 28px;
+            }
+            .title{
+                font-size: 16px;
+            }
+        }
+    }
+    
+}
+@media screen and (width<=400px) {
+    
+}
+ 

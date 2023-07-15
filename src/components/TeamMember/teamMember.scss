@@ -1,0 +1,180 @@
+
+        .team-member-container{
+            height: 27vw;
+            width: 20vw;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 75% 25%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 6px;
+            margin-bottom: 1rem;
+            margin-right: 2rem;
+            background: #FFFFFF;
+            // border: 1px solid #d9d9d9;
+            border-radius: 15px;
+            border-radius: 15px;
+            padding: 5px;
+            .img-bg-container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                border-radius: 50%;
+                // border: 2px solid red;
+                padding: 1em;
+                .about-img{
+                    min-width: 99%;
+                    min-height: 99%;
+                    padding: 0.5%;
+                    background-size: cover;
+                    border-radius: 15px;
+                }
+            }
+            
+            .member-details{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 6px;
+                margin-left: 6px;
+                .member-name{
+                    font-size: 1.8vw;
+                    color:black;
+                    font-weight:600;
+                    margin-top: 2px;
+                    margin-bottom: 6px;
+                    padding-top: 0px;
+                }
+                .member-role{
+                    font-weight: 600;
+                    font-size: 1.2vw;
+                    color: grey;
+                }
+                .shocial-accounts{
+                    margin-top: 12px;
+                    width: 60%;
+                    display: grid;
+                    grid-template-columns: 25% 25% 25%;
+                    grid-template-rows: 40px;
+                    justify-content: space-between;
+                    .about-social-accounts{
+                        font-size: 32px;
+                        flex-shrink: 0px;
+                    }
+                    .facebook{
+                        color: #1877F2;
+                    }
+                    .insta{
+                        color: #E4405F;
+                    }
+                    .linkdin{
+                        color: #0A66C2;
+                    }
+                }
+            }
+        }
+
+@media screen and (max-width: 1110px) {
+    .team-member-container{
+        width: 32vw;
+        display: grid;
+        grid-template-rows:75% 25% ;
+        margin-right: 1rem;
+        .member-details{
+            .member-name{
+                font-size: 2.2vw;
+                margin-top: 15px;
+                margin-bottom: 2px;
+
+            }
+            .member-role{
+                font-size: 1.7vw;
+            }
+            .shocial-accounts{
+                width: 80%;
+                .about-social-accounts{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .team-member-container{
+        height: 30vw;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .team-member-container{
+        width: 29vw;
+        margin-right: 0.75rem;
+        .img-bg-container{
+            padding: 0 !important;
+        }
+        .member-details{
+            .shocial-accounts{
+                width: 90%;
+                .about-social-accounts{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .team-member-container{
+        height: 35vw;
+        width: 28vw;
+        display: grid;
+        grid-template-rows: 60% 40%;
+        .member-details{
+            .member-name{
+                font-size: 2.5vw;
+                margin-top: 2rem;
+
+            }
+            .member-role{
+                font-size: 1.9vw;
+            }
+            .shocial-accounts{
+                width: 100%;
+                .about-social-accounts{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .team-member-container{
+        height: 47vw;
+        width: 40vw;
+        display: grid;
+        grid-template-rows: 65% 35%;
+        margin-right: 0.5rem;
+        .member-details{
+            .member-name{
+                font-size: 2.7vw;
+                margin-top: 15px;
+                margin-bottom: 2px;
+
+            }
+            .member-role{
+                font-size: 1.7vw;
+            }
+            .shocial-accounts{
+                .about-social-accounts{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

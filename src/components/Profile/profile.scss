@@ -1,0 +1,642 @@
+.profile-bg-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 24% 1% 75%;
+  padding-top: 120px;
+  position: relative;
+
+  .tabs-bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 80vh;
+
+    .tabs-container {
+      width: 50%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+
+      .tab {
+        border: 0px solid;
+        background-color: transparent;
+        color: #999999;
+        font-weight: 600;
+        text-align: left;
+        font-size: 18px;
+        padding-left: 12px;
+        min-height: 35px;
+        outline: none;
+        margin-bottom: 12px;
+        cursor: pointer;
+      }
+
+      .active-tab {
+        border-left: 2px solid #0293A8;
+        color: #0293A8;
+      }
+    }
+
+    .logout-btn {
+      width: 60%;
+      height: 40px;
+      background-color: #0293A8;
+      color: #fff;
+      border: #0293A8;
+      border-radius: 8px;
+      outline: none;
+      cursor: pointer;
+    }
+    .logout-btn:hover{
+      background-color: #59e9ff;
+      font-weight: 700;
+    }
+    .popup-div{
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      border: 2px solid #dadada;
+      border-radius: 22px;
+      padding: 1rem 4rem;
+      text-align: center;
+      font-size: 18px;
+      background-color: #ffffff;
+      .popup-h{
+       color: #0293A8;
+       font-size: 42px;
+       font-weight: 700;
+      }
+      .popup-btn-div{
+        display: flex;
+        justify-content: space-between;
+         .popup-btn{
+          margin: 1rem 0;
+          background-color: #0293A8;
+          color: white;
+          height: 36px;
+          width: 45%;
+          border: none;
+          border-radius: 5px;
+          font-weight: 500;
+          border: 2px solid  #0293A8;
+         cursor: pointer;
+         }
+         .popup-btn:hover{
+          background-color: #3ae2fc;
+         }
+         .yes{
+          background-color: #fff;
+          border: 2px solid #999999;
+          color: #3f3f3f;
+         }
+         .yes:hover{
+            background-color: #ff6262;
+         }
+      }
+    }
+  }
+
+  .p-vertical-line {
+    height: 95%;
+    width: 1px;
+    background-color: #999999;
+  }
+
+  .edit-profile-container {
+    height: 95%;
+    width: 90%;
+
+    .edit-profile-h {
+      font-size: 22px;
+    }
+
+    .edit-form-container {
+      width: 100%;
+      height: 90%;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      cursor: pointer;
+
+      label {
+        font-size: 14px;
+        color: #999999;
+        font-weight: 300;
+        margin-top: 16px;
+      }
+
+      input {
+        padding: 5px;
+        border-radius: 8px;
+        width: 100%;
+        outline: none;
+        border: 1px solid gray;
+      }
+
+      .gender-container {
+        width: 100%;
+        margin: 2rem 0rem 2rem 0rem;
+        display: grid;
+        grid-template-columns: 48% 48%;
+        align-items: center;
+        justify-content: space-around;
+
+        .gender-btn {
+          background-color: transparent;
+          height: 40px;
+          outline: none;
+          border: 0px solid;
+          box-shadow: 0px 0px 2px 2px #999999;
+          border-radius: 8px;
+          color: gray;
+        }
+
+        .active {
+          color: #0293A8;
+          font-weight: 700;
+          box-shadow: 0px 0px 2px 2px #0293A8;
+        }
+      }
+
+      .edit-form-btns {
+        position: sticky;
+        bottom: 0px;
+        background-color: #fff;
+        width: 100%;
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 30% 30%;
+        grid-template-rows: 40px 40px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2%;
+
+        .form-btn {
+          height: 40px;
+          border: 0px solid;
+          border-radius: 8px;
+        }
+
+        .save-btn {
+          background-color: #0293A8;
+          color: #fff;
+        }
+
+        .cancel-btn {
+          background-color: #fff;
+          box-shadow: 0px 0px 2px 2px #0293A8;
+          color: #0293A8;
+        }
+      }
+    }
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    .profile-container {
+      width: 70%;
+      height: 90%;
+      overflow-y: scroll;
+
+      .profile-h {
+        font-size: 20px;
+      }
+
+      .profile-details {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        border-top: 1px solid #999999;
+        padding-top: 1rem;
+
+        .keys {
+          display: grid;
+          grid-auto-columns: 100%;
+          grid-auto-rows: 40px;
+          align-items: center;
+          font-weight: 300;
+          padding-left: 1rem;
+        }
+
+        .values {
+          display: grid;
+          grid-auto-columns: 100%;
+          grid-auto-rows: 40px;
+          align-items: center;
+          font-weight: 300;
+        }
+      }
+
+      .edit-btn-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+
+        .edit-btn {
+          width: 30%;
+          height: 40px;
+          color: #fff;
+          background-color: #0293A8;
+          border: 0px solid;
+          border-radius: 8px;
+          outline: none;
+        }
+      }
+    }
+
+    .content-address {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      .saved-addresses-bg-container {
+        width: 100%;
+        height: 62vh;
+        margin-top: 15px;
+        overflow-y: scroll;
+
+        .saved-addresses-container {
+          overflow-x: hidden;
+          width: 100%;
+          display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+      }
+      .bttns {
+        width: 100%;
+        background-color: #ffffff;
+        height: 45px;
+        padding-top: 8px;
+        
+
+        .add-address {
+         
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 40%;
+          height: 40px;
+          margin: auto;
+          color: #ffffff;
+          border: 2px solid #0293A8;
+          background-color: #0293A8;
+          border-radius: 8px;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .orders-container {
+      height: 80vh;
+      width: 95%;
+      overflow-y: scroll;
+
+      .orders-h {
+        font-size: 22px;
+        font-weight: 500;
+      }
+
+      .empty-orders {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .empty-cart {
+          width: 50%;
+          background-size: cover;
+        }
+
+        .empty-cart-h {
+          font-size: 18px;
+          color: #0293A8;
+          font-size: 500;
+        }
+
+        .empty-cart-p {
+          font-size: 14px;
+          color: #999999;
+          margin-bottom: 12px !important;
+        }
+
+        .empty-cart-btn {
+          border: 0px solid;
+          background-color: #0293A8;
+          width: 150px;
+          height: 40px;
+          color: #fff;
+          border-radius: 8px;
+          font-weight: 300;
+          outline: none;
+        }
+      }
+
+      .orders-container {
+        list-style-type: none;
+        padding-inline-start: none;
+      }
+    }
+     .form {
+        margin-top: 25px;
+        height: calc(100vh - 200px);
+        overflow: hidden;
+        overflow-y: scroll;
+        position: relative;
+        .address-heading {
+            color: rgb(28, 28, 28);
+            font-size: 18px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0.04em;
+        }
+
+        .full-width-input {
+            width: 90%;
+            height: 45px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border: 1px solid #DADADA;
+            outline: none;
+            padding: 5px;
+            font-weight: 700;
+        }
+
+        .form-two-line-container {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+
+            .hulf-Width-input {
+                width: 45%;
+                height: 45px;
+                border-radius: 8px;
+                border: 1px solid #DADADA;
+                margin-bottom: 10px;
+                outline: none;
+                padding: 5px;
+                font-weight: 700;
+
+            }
+        }
+
+        .save-address {
+            color: rgb(28, 28, 28);
+            font-size: 18px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0.04em;
+            padding-top: 15px;
+            margin-bottom: 1px;
+        }
+
+        .address-type-button {
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+
+            .select-btn {
+                border: 1px solid #1D1D1D;
+                border-radius: 10px;
+                font-size: 15px;
+                padding: 3px;
+                width: 45%;
+                font-weight: 300;
+                text-align: center;
+                cursor: pointer;
+                background-color: #FFFFFF;
+                outline: none;
+                
+            }
+            .active{
+                color: #0293A8;
+                font-weight: 700;
+                border: 1px solid #0293A8;
+            }
+        }
+
+        .default-address {
+            margin-top: 10px;
+            .checkbox{
+                height: 16px;
+                width: 16px;
+            }
+            .save-text {
+                margin-left: 7px;
+            }
+        }
+
+        .bottom-btns-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            bottom: 0px;
+            background-color: #fff;
+            .cancel-btn{
+                background: #0293A8;
+                border: 1px solid #0293A8;
+                border-radius: 4px;
+                font-size: 16px;
+                text-align: center;
+                margin-top: 1rem;
+                font-weight: 600;
+                letter-spacing: 0.03rem;
+                color: #ffff;
+                width: 40%;
+                height: 35px;
+                cursor: pointer;
+            }
+            .confirm-btn {
+                background: #0293A8;
+                border: 1px solid #0293A8;
+                border-radius: 4px;
+                font-size: 16px;
+                text-align: center;
+                margin-top: 1rem;
+                font-weight: 600;
+                letter-spacing: 0.03rem;
+                color: #ffff;
+                width: 100%;
+                height: 35px;
+                cursor: pointer;
+            }
+            .confirm-btn-hulf {
+                background: #0293A8;
+                border: 1px solid #0293A8;
+                border-radius: 4px;
+                font-size: 16px;
+                text-align: center;
+                margin-top: 1rem;
+                font-weight: 600;
+                letter-spacing: 0.03rem;
+                color: #ffff;
+                width: 40%;
+                height: 35px;
+                cursor: pointer;
+            }
+        }
+                .address-form-error-msg {
+                    text-align: center;
+                    font-size: 14px;
+                    color: crimson;
+                    font-weight: 600;
+                    margin: 12px !important;
+                }
+            }
+  }
+}
+
+@media screen and (width<=920px)
+{
+  .popup-div{
+    left: 40% !important;
+    padding: 1rem 3rem !important;
+    .popup-h{
+     font-size: 38px !important;
+    }
+  }
+}
+
+@media screen and (width<=840px) {
+  .popup-div{
+    left: 35% !important;
+  }
+  
+}
+@media screen and (orientation: portrait),
+(width <=710px) {
+  .profile-bg-container {
+    padding-top: 100px !important;
+  }
+    .tabs-container {
+      width: 90% !important;
+
+      .tab {
+        font-size: 14px !important;
+      }
+    }
+
+  .bttns {
+    .add-address {
+     
+      width: 80% !important;
+    }
+  }
+
+  .edit-profile-container {
+    height: 70vh !important;
+    overflow-y: scroll;
+  }
+
+  .profile-container {
+    width: 95% !important;
+
+    .profile-h {
+      font-weight: 500 !important;
+      font-size: 16px !important;
+    }
+
+    .keys {
+      font-size: 12px !important;
+      grid-auto-rows: 30px !important;
+    }
+
+    .values {
+      font-size: 12px !important;
+      grid-auto-rows: 30px !important;
+    }
+  }
+
+  .edit-form-container {
+    height: 62vh !important;
+  }
+
+  .orders-h {
+    font-size: 18px !important;
+  }
+
+  .empty-cart-btn {
+    width: 100px !important;
+    height: 35px !important;
+  }
+}
+
+@media  screen and (width<=680px) {
+  .popup-div{
+    left: 30% !important;
+  }
+  
+}
+
+@media  screen and (width<=580px) {
+  .popup-div{
+    padding: 1rem 3rem !important;
+    font-size: 15px !important;
+    .popup-h{
+     font-size: 32px !important;
+    }
+  }
+  
+}
+@media  screen and (width<=480px) {
+  .popup-div{
+    padding: 1rem 3rem !important;
+    font-size: 13px !important;
+    .popup-h{
+     font-size: 20px !important;
+    }
+  }
+  
+}
+@media screen and (width <=400px) {
+  .orders-h {
+    font-size: 16px !important;
+  }
+  .bttns {
+    .add-address {
+     
+      width: 90% !important;
+    }
+  }
+}
+@media  screen and (width<=370px) {
+  .popup-div{
+     left: 27% !important;
+  }
+  .logout-btn {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (width <= 700px) {
+    .form{
+        .form-two-line-container{
+            flex-direction: column;
+            .hulf-Width-input{
+                width: 100% !important;
+            }
+        }
+        .full-width-input{
+            width: 100% !important;
+        }
+    }
+}

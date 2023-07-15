@@ -1,0 +1,173 @@
+.wishlist-container {
+    margin-top: 110px;
+    
+
+    .wishlist-length {
+        text-align: start;
+        margin-top: 9rem;
+        font-weight: 600;
+        margin-left: 2rem;
+        font-size: 16px;
+        letter-spacing: 0.08em;
+        color: #1D1D1D;
+    }
+
+    .wishlist {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        // margin-top: 30px;
+
+        .empty-wishlist-container {
+            height: calc(80vh - 131px);
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+
+            .empty-cart-img {
+                width: 20%;
+                background-size: cover;
+                margin-left: 56px;
+            }
+
+            .empty-wishlist-heading {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 45px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                color: #0293A8;
+            }
+
+            .wishlist-subheading {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 35px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                color: #999999;
+                padding-bottom: 15px;
+            }
+
+            .shop-btn {
+                width: 25vw;
+                background: #FFFFFF;
+                border: 2px solid #0293A8;
+                padding: 10px;
+                color: #0293A8;
+                font-weight: 600;
+                font-size: 16px;
+                text-align: center;
+                letter-spacing: 0.08em;
+                cursor: pointer;
+            }
+        }
+
+        .product{
+            display: grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            column-gap: 1%;
+            width: 90%;
+            min-height: 65vh;
+        }
+
+        .line {
+            width: 90vw;
+            color: #dadada;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 85vw;
+
+            // margin-bottom: 2rem;
+            .copy-right {
+                text-align: left;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .social-media-icons-container {
+                width: 10vw;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .insta {
+                    font-size: 36px;
+                    color: #000000;
+                }
+
+                .youtube {
+                    color: #000000;
+                    font-size: 36px;
+                }
+
+                .facebook {
+                    color: #000000;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (width<=1000px) {
+    .wishlist-container {
+        .wishlist-length {
+            margin-top: 6rem;
+            font-weight: 600;
+            font-size: 14px !important;
+        }
+    
+        .wishlist {
+            .product{
+                grid-template-columns: 32% 32% 32%;
+                column-gap: 1%;
+                width: 90%;
+            }
+    
+  }}}
+
+
+  @media screen and (width<=845px) {
+    .wishlist-container {
+        .wishlist {
+    
+            .product{
+                display: grid;
+                grid-template-columns: 48% 48%;
+                column-gap: 2%;
+                width: 90%;
+            }
+    
+  }}}
+
+
+   @media screen and (width<=390px) {
+    .wishlist-container {
+        .wishlist-length {
+            margin-top: 6rem;
+            font-weight: 600;
+            font-size: 14px !important;
+        }
+    
+        .wishlist {    
+            .product{
+                display: grid;
+                grid-template-columns: none;
+                column-gap: 2%;
+                width: 90% !important;
+            }
+    
+  }}}

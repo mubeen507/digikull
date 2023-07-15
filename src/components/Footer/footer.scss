@@ -1,0 +1,118 @@
+.footer-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(108.26deg, #FFF0E1 -6.32%, #72371F 122.69%);
+
+    .footer-top-section{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90vw;
+        .about{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 30vw;
+            .about-heading{
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+            .contact-description{
+                font-size: 16px;
+                color: rgb(46, 46, 46);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+    .address-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30vw;
+        text-align: end;
+        .address-heading{
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        .address{
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 600;
+            margin-bottom: 12px !important;
+        }
+        .terms-heading{
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(0, 0, 33);
+            text-decoration: none;
+            margin-bottom: 12px;
+        }
+        .msme-certificate{
+            font-size: 16px;
+            font-weight: 600;
+            color: rgb(0, 0, 33);
+            text-decoration: none;
+        }
+    }
+    .line{
+        width: 90vw;
+        color: #000000;
+        margin-bottom: 1rem;
+    }
+    .footer-bottom-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin-bottom: 2rem;
+        .copy-right{
+            text-align: left;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .social-media-icons-container{
+            width: 120px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .insta{
+                font-size: 36px;
+                color: #000000;
+            }
+            .youtube{
+                color: #000000;
+                font-size: 36px;
+            }
+            .facebook{
+                color: #000000;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (width <= 820px) {
+    .footer-top-section{
+        width: 90% !important;
+        .about{
+            width: 50% !important;
+        }
+        .address-container{
+            width: 40% !important;
+        }
+    }
+    .social-media-icons-container{
+        width: 100px !important;
+        .social-icon{
+            font-size: 26px !important;
+        }
+    }
+    
+}
