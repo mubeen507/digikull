@@ -91,7 +91,7 @@ function App() {
 
   const renderFailureView = () => (
         <div className='error-container'>
-            <h1 className='error-h'>Something Was Wrong Please Tryagain</h1>
+            <h1 className='error-h'>Something Went Wrong Please Try again !!!</h1>
             <button type="button" className='try-again-btn' onClick={getSubdomainData} >Try Again</button>
         </div>
     )
